@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Project 9</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        color: white;
+        text-align: center;
+        font-family: Arial, sans-serif;
+      }
+      img {
+        height: 15vh;
+      }
+      header {
+        height: 20vh;
+        background-color: #ff8787;
+        text-align: center;
+      }
+      .container {
+        display: flex;
+      }
+      #sidebar {
+        background-color: #73c2fb;
+        height: 70vh;
+        width: 20%;
+        ul {
+          list-style-type: none;
+          display: none;
+          li {
+            padding: 0.5rem;
+            background-color: #1c7ed6;
+            margin: 0.5rem;
+            color: white;
+          }
+        }
+        &:hover {
+          h1 {
+            display: none;
+          }
+          ul {
+            display: block;
+            cursor: pointer;
+          }
+        }
+      }
+      #content {
+        background-color: #ffd43b;
+
+        height: 70vh;
+        width: 80%;
+      }
+      footer {
+        background-color: #183153;
+        padding: 1rem;
+        text-align: center;
+        height: 10vh;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Arfa Banyu Santoro</h1>
+      <img src="../assets/duck.jpeg" alt="duck" />
+    </header>
+    <div class="container">
+      <div id="sidebar">
+        <h1>sidebar</h1>
+        <ul>
+          <li>Project 1</li>
+          <li>Project 2</li>
+          <li>Project 3</li>
+        </ul>
+      </div>
+      <div id="content">
+        <h1>content</h1>
+      </div>
+    </div>
+
+    <footer><p>Made with 🦾 by banyu</p></footer>
+  </body>
+</html>
